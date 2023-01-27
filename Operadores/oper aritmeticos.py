@@ -15,4 +15,4 @@ div_baja = 8 // 3
 # Resto o Modulo ( % ) multiplica el segundo numero n veces hata acercarce al primero
 # lo que quede faltando es el modulo
 Modulo = 23 % 7 
-print(Modulo)
+print(type(divi))
