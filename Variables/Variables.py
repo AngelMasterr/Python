@@ -18,8 +18,8 @@ print(name_completo)
 print(name_edad)
 
 # Operadores
-# del : elimina la variable
+# (del) elimina la variable
 del edad 
-# in ó not in: comprobar si una palabra esta dentro de una variables
+# (in / not in) operador de pertenencia
 print("lucas" in name_completo)
 print("perez" not in name_completo)
