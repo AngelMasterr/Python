@@ -10,3 +10,4 @@ print(tupla)
 
 # set: crear conjunto, no tiene orden fijo y tampoco se puede modificar (se usa llaves)
 conjunto = {"Angel","Duarte",True,34}
+#ddddddddddddddddd
