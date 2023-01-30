@@ -42,5 +42,5 @@ print(cadena1.endswith("gel"))
 # replace() : reemplaza un pedazo de la cadena por el dato dado, si no encuentra coincidencia no hace nada
 print(cadena1.replace("angel", "DarkAngel"))
 
-# split() : separa la cadena en donde encuentre el dato dado y la convierte el lista
+# split() : separa la cadena en donde encuentre el dato dado y la convierte en lista
 print(cadena1.split(" ")) # separa la cadena cada vez que encuentre "espacio"
