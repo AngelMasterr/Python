@@ -14,7 +14,11 @@ chupalo = "cacaca"
 # porcentaje de diferencia de duracion de los otros cursos vs curso actual
 dif_otro_curso_min  = 100 - (curso_actual / otros_cursos_min * 100)
 dif_otro_curso_prom = 100 - (curso_actual / otros_cursos_prom * 100)
-dif_otro_curso_max  = 100 - (curso_actual / otros_cursos_max * 100)
-print("el curos actual dura un",dif_otro_curso_min,"% menos que el curso minimo")
-print(dif_otro_curso_prom)
-print(dif_otro_curso_max)
+dif_otro_curso_max  = 100 - (curso_actual / otros_cursos_max * 100) 
+dif_otro_curso_max  = round(dif_otro_curso_max,2) # redonde el resultado a dos decimales, porque daba un verguero
+
+print(f"el curos actual dura un {dif_otro_curso_min}% menos que el curso mínimo")
+print(f"el curos actual dura un {dif_otro_curso_prom}% menos que el curso promedio")
+print(f"el curos actual dura un {dif_otro_curso_max}% menos que el curso máximo")
+
+# no hago mas porque es la misma verga, matematicas muchacho
