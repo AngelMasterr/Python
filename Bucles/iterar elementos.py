@@ -1,3 +1,4 @@
+# Esto sirve apra iterar listas, tuplas y conuntos
 # Crear una lista
 animales = ["gato", "perro", "loro", "mono", "buho", "leon"]
 numeros = [1, 5, 7, 9, 11, 13]

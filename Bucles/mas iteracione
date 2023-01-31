@@ -1,0 +1,46 @@
+
+frutas = ["manzana", "coco", "pera", "banano", "limon", "sandia"]
+
+# Recorrer la lista de frutas
+for frut in frutas:
+    print(f"me voy a comer una {frut}")
+    
+# La pera no me gusta hay que sacarla
+for frut in frutas:
+    if(frut == "pera"):
+        continue            # continue: es para que deje ejecutar todo el resto de codigo y pase al siguiente elemento
+    print(f"me voy a comer una {frut} porque no es una pera")
+            
+# La pera y el limon no me gustan hay que sacarlos
+for frut in frutas:
+    if(frut == "pera" or frut == "limon"):
+        continue            # continue: es para que deje ejecutar todo el resto de codigo y pase al siguiente elemento
+    print(f"me voy a comer una {frut} porque no es una pera ni limon acido")      
+
+# cuando llegue a comer banano se termina todo, me mori
+for frut in frutas:
+    print(f"me voy a comer una {frut} pero si como banano me muero")
+    if(frut == "banano"):
+        break               # break: es para romper todo el ciclo del for y terminar en este instante (incluso si hay un else no se ejecuta)
+else: print("esto no se ejecuta si el break se activa") 
+   
+print("Bucle terminado por comerse el banano")
+
+# Tambien se puede recorrer una cadena o string
+cadena = "hola baby"
+for let in cadena:
+    print(let)              # da como respuesta cada letra y espacios de la cadena
+
+
+# Duplicar una lista de numero con for
+numeros = [5, 10, 12, 7, 2]
+numeros_duplicados = list() # Crear una lista vacia
+for num in numeros:
+    numeros_duplicados.append(num*2)  # append es para agregar datos a una lista
+print(numeros_duplicados)
+
+# Duplicar una lista de numero con for de la manera rapida
+numeros_duplicados = [x*2 for x in numeros]
+print(numeros_duplicados)
+
+    
