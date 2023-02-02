@@ -14,10 +14,16 @@ def num_pares(aaa):
     return numeros_pares
 print(num_pares(numeros))
 
+
 # Crea otra funcion que muestre los numero pares pero iterando desde afuera usando filter (manera medio larga)
 def num_pares_2(bbb):
     if bbb % 2 == 0:
         return True        
-# filter: se introducen dos parametros (la funcion y la lista a analizar) 
+# filter: se introducen dos parametros (la funcion y la lista a analizar) analiza cada valor de la lista (parecido a for)
 numeros_pares_2 = filter(num_pares_2, numeros) # filtra uno por uno los valores de la lista (parecido a for)
 print (list(numeros_pares_2))   # Es necesario indicar que es una lista para darle forma a todos los valores guardados
+
+
+# Crea otra funcion que muestre los numero pares pero de manera corta con (lambda y filter)
+def num_pares_3(ccc):
+    
