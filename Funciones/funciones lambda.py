@@ -25,5 +25,6 @@ print (list(numeros_pares_2))   # Es necesario indicar que es una lista para dar
 
 
 # Crea otra funcion que muestre los numero pares pero de manera corta con (lambda y filter)
-def num_pares_3(ccc):
-    
+
+numeros_pares_3 = filter (lambda num : num % 2 == 0, numeros)   # lambda: si cumpla la condicion retorna True y guarda el valor
+print(list(numeros_pares_3))                                    # filter: analiza cada valor de la lista de "numeros"
