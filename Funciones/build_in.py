@@ -35,3 +35,10 @@ resultado_all3 = all([32, [7,3], 0, True])      #False
 resultado_all4 = all([32, [7,3], None, True])   #False
 print (f"Resultados all las dos ultima contienen algun dato de la lista sin valor: {resultado_all1,  resultado_all2, resultado_all3, resultado_all4}")
 
+# sum: sumar todos los numero de una secuencia (lista, dupla, conjunto) 
+lista_num = [1,2,3,4,5]
+print(sum(lista_num))
+
+
+
+
