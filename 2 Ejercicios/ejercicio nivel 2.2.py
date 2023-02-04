@@ -1,4 +1,4 @@
-# Crear una funcion que al introducir un numero, genere todos los numero primos hasta llegar al numero dado
+# Crear una funcion que al introducir un numero, genere todos los numeros primos hasta llegar al numero dado
 
 def numeros_primos(aaa):                        # aaa = 5
     if aaa > 1:
