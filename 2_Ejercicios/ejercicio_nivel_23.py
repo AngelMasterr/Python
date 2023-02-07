@@ -33,7 +33,7 @@ def metodo_crivo(dato):
                 lista_numeros.remove(num)
     return lista_numeros
     
-print(metodo_crivo(dato))
+print(f"{metodo_crivo(dato)} metodo crivo")
 
 
 
