@@ -22,3 +22,11 @@ print(f"el curos actual dura un {dif_otro_curso_prom}% menos que el curso promed
 print(f"el curos actual dura un {dif_otro_curso_max}% menos que el curso máximo")
 
 # no hago mas porque es la misma verga, matematicas muchacho
+
+def multiplicar(aaa,bbb):
+    mutl = aaa * bbb
+    print(f"la multiplicación es: {mutl}")
+
+dato_1 = int(input("introduzca el primero numero: "))
+dato_2 = int(input("introduzca el segundo numero: "))
+multiplicar(dato_1, dato_2)

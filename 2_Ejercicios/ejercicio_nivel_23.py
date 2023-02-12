@@ -37,3 +37,6 @@ print(f"{metodo_crivo(dato)} metodo crivo")
 
 
 
+
+
+
