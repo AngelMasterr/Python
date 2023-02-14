@@ -26,7 +26,7 @@ print(primos_hasta(dato))
 def metodo_crivo(dato):
     lista_numeros = list(range(2, dato+1))  
     for n in lista_numeros[+0:]:        
-        lista_multiplos_n = list(filter(lambda x: x%n == 0, lista_numeros))    
+        lista_multiplos_n = list(filter(lambda x: x%n == 0, lista_numeros[+0:]))    
     
         for num in lista_multiplos_n[1:]:
             if num in lista_numeros:
@@ -34,6 +34,21 @@ def metodo_crivo(dato):
     return lista_numeros
     
 print(f"{metodo_crivo(dato)} metodo crivo")
+
+# de otra manera
+def metodo_crivo_2(dato):    
+    lista_numeros = list(range(2, dato+1))
+    n = 1
+    for aaa in lista_numeros:
+        for num in lista_numeros[n:]:
+            if num % aaa == 0:
+                lista_numeros.remove(num)
+        n = n + 1            
+    return lista_numeros
+
+print(f"{metodo_crivo_2(dato)} metodo crivo_2")
+        
+    
 
 
 
