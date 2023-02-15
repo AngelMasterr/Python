@@ -5,6 +5,7 @@
 # luego instalar pandas (py -m pip install pandas)
 
 import pandas as pd
+
 dataframe = pd.read_csv("Archivos//1archivo_csv.csv")
 print(dataframe)
 
@@ -14,6 +15,15 @@ edad = dataframe["Edad"]
 genero = dataframe["Genero"]
 print(genero)
 
-# Si queremos asignar el nombre de la columnas lo podemos hacer desde la lectura
+# names: Si queremos agregar el nombre de las columnas lo podemos hacer desde la lectura
 dataframe = pd.read_csv("Archivos//1archivo_csv.csv", names=["name","age","gender"])
 print(dataframe)
+
+# sort_values: para ordenar los valores de manera ascendente
+dataframe = pd.read_csv("Archivos//1archivo_csv.csv")
+ordenar_edad_ascend = dataframe.sort_values("Edad")
+print(ordenar_edad_ascend)
+
+# sort_values: para ordenar los valores de manera descendente
+ordenar_edad_descen = dataframe.sort_values("Edad", ascending=(False))
+print(ordenar_edad_descen)
