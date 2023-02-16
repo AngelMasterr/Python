@@ -14,3 +14,6 @@ else:
     print("Secuencia de Fibonacci:")
     for i in range(nterms):
         print(recur_fibo(i))
+        
+for i in range(5):
+    print(i)
