@@ -2,6 +2,7 @@ cadena1 = "hello i am angel"
 Cadena2 = "your welcome"
 cadena3 = "YOU ARE WONDERFULL"
 cadena4 = "1234567890"
+cadena5 = "PepiTo ES uN buEn ChICo"
 
 # dir : funcion que muestra todos los metodos que puedo aplicar a un obejto (string, int, flota, etc)
 # print(dir(cadena1)) 
@@ -12,6 +13,9 @@ print(cadena1.upper())
 
 # lower() : Convierte todo a minuscula
 print(cadena3.lower()) 
+
+# swapcase() : Convierte las minusculas a mayusculas y viceversa
+print(cadena5.swapcase())
 
 # capitalize : coniverte todo en minuscula y deja la primera letra en mayuscula
 print(cadena3.capitalize())

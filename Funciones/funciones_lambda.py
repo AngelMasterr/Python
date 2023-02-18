@@ -28,3 +28,7 @@ print (list(numeros_pares_2))   # Es necesario indicar que es una lista para dar
 
 numeros_pares_3 = filter (lambda num : num % 2 == 0, numeros)   # lambda: si cumpla la condicion retorna True y guarda el valor
 print(list(numeros_pares_3))                                    # filter: analiza cada valor de la lista de "numeros"
+
+# map: es parecido a filter, pero en ves de filtrar regresa todos los valores cumplan o no la función
+# todo los valores introducido deben ser numero separados por espacio, gracias a "map" los convierte en enteros
+integer_list = map(int, input().split()) 
