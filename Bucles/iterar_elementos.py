@@ -26,7 +26,7 @@ for i in range(len(numeros)):
     print(numeros[i])
   
 # La forma correcta de recoorer la lista por su indice  
-# enumaerate : da como respuesta una pareja de datos por elemento, el primero [0]: la posicion y el segundo [1]: el valor
+# enumaerate : da como respuesta una pareja de datos por elemento (tupla), el primero [0]: la posicion y el segundo [1]: el valor
 for i in enumerate(numeros):
     posicion = i[0]
     valor = i[1]
