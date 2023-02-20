@@ -1,9 +1,10 @@
-def merge_the_tools(string, k):
-    
-    long_s = len(string)
-    sub_len = long_s // k
-    
-    sub_string = [string[i:i+sub_len] for i in range(0, long_s, sub_len)]
-    print(sub_string)
+from itertools import groupby
 
-merge_the_tools("AABCAAADA", 3)
+#numbers = list(map(int, input()))
+numbers = input()
+groups = groupby(numbers)
+list_gro = []
+for key, gro in groups:
+    item = (len(list(gro)), key)
+    list_gro.append(item)
+    #print(len("".join(list(gro))), key)
