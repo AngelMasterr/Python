@@ -1,15 +1,9 @@
-def solve(s):
-    #name = s.title()              
-    palabras = s.split()
-    patata = s.split(" ")    
-  
-    for i in range(len(patata)):
-        if patata[i] == "":
-            patata[i] = patata[i]
-        elif not patata[i][0].isdigit():
-            patata[i] = patata[i].title()
-        
-    resultado = ' '.join(patata)
+def merge_the_tools(string, k):
     
-    return resultado
-print(solve("asdasd asdasda 142asd   a  asdas 14255asd"))
+    long_s = len(string)
+    sub_len = long_s // k
+    
+    sub_string = [string[i:i+sub_len] for i in range(0, long_s, sub_len)]
+    print(sub_string)
+
+merge_the_tools("AABCAAADA", 3)
