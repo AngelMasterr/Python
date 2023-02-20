@@ -6,7 +6,7 @@
 
 from itertools import permutations
 
-string, k = input("introduzca una palabra y luego el numero a permutar: ").split()
+string, k = input("introduzca una palabra a permutar y luego el numero de rango: ").split()
 k = int(k)
 
 permutacion = list(permutations(string, k))
