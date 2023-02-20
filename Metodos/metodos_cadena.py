@@ -51,3 +51,8 @@ print(cadena1.replace("angel", "DarkAngel"))
 
 # split() : separa la cadena en donde encuentre el dato dado y la convierte en lista
 print(cadena1.split(" ")) # separa la cadena cada vez que encuentre "espacio"
+
+# FUNCIÓN sorted() para ordenar una lista de cadenas de texto en orden alfabético
+lista_cadena = ["eduard", "peña", "losa", "bebe"]
+orden = sorted(lista_cadena) # sorted(nombres, key=str.lower) para que priorice las mayuscula
+print(orden)
