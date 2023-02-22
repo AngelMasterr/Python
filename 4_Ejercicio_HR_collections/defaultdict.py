@@ -12,27 +12,14 @@ a
 b
 a       group B contains 'a', 'b'
 b"""
-d = defaultdict(list)
-n, m = map(int, input().split())
-group_a = []; group_b = []
-for i in range(n): group_a.append(input())
-for i in range(m): group_b.append(input())
 
-for j in group_b:
-    for i in range(len(group_a)):
-        if j == group_a[i]:
-            d[j].append(i+1)
-        elif j not in group_a: 
-            d[j].append(-1)
-for i in d.values(): print(*i)
-"""
 from collections import defaultdict
 d = defaultdict(list)
-n,m = map(int,input().split())
+n, m = map(int,input().split())
 for i in range(n):
     d[input()].append(str(i+1))
 #print(d['a'])
 #print(d['b'])
 for j in range(m):
-    print(' '.join(d[input()]) or -1)"""
+    print(" ".join(d[input()]) or -1)
     

@@ -1,10 +1,12 @@
-from itertools import groupby
+#a = int(1.0)
+#b = bool(1)
+numbers = [1,2,3,4,5,6,7]
+set1 = {"a", "b", "c", "d"}
+set2 = {"c", "d", "e", "f"}
+#print(set2.union(set1))
+#numbers.append(["a", "b"])
+#print(numbers)
 
-#numbers = list(map(int, input()))
-numbers = input()
-groups = groupby(numbers)
-list_gro = []
-for key, gro in groups:
-    item = (len(list(gro)), key)
-    list_gro.append(item)
-    #print(len("".join(list(gro))), key)
+def f(*x):
+    return sum(x)
+print(f(5, 3))
