@@ -1,4 +1,4 @@
-# pandas: es mas practico que "csv" y el diminutivo mas usado es "pd" 
+# pandas: es mas practico que "open" y el diminutivo mas usado es "pd" 
 
 # se debe instalar "pip" desde el terminal de window "cmd - adminstrador" (py -m ensurepip --upgrade)
 # para verficar si quedo instalado y todo lo que tiene (py -m pip) 
