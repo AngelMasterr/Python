@@ -39,3 +39,6 @@ lista.reverse()
 lista_2.reverse()
 print(lista)
 print(lista_2)
+
+# index() : busca la posicion de un dato en una lista, si no la encunetra devuelve una excepcion (error)
+print(lista_2.index(3))
