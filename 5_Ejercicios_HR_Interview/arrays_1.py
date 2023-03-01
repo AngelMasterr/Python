@@ -22,3 +22,4 @@ def minimumBribes(q):
         list_q.remove(q[i])      
     print(b)
             
+minimumBribes(q4)
