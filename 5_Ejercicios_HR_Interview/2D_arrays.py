@@ -9,6 +9,7 @@ queries:    1 2 100         matriz      100 100 0   0   0
             2 5 100         resultante  100 200 100 100 100
             3 4 100                     100 200 200 200 100 """                 
 
+# metodo 1
 def arrayManipulation(n, queries):
     # Write your code here
     mat_ceros = []
@@ -20,16 +21,22 @@ def arrayManipulation(n, queries):
         mat_ceros.append(list_ceros.copy()) # cree copia de la lista, si no lo hace la lista se modifica siempre en la mat_ceros
     return (max(max(mat_ceros)))   
 
-# metodo 2
+# metodo 2 mejorado
 def arrayManipulation2(n, queries):
     # Write your code here
-    mat_ceros = []
     list_ceros = [0]*n
     for a,b,k in queries:        
         for j in range(a-1, b):            
-            list_ceros[j] +=  k
-        mat_ceros.append(list_ceros.copy())    
-    return (max(max(mat_ceros)))          
+            list_ceros[j] +=  k            
+    return max(list_ceros)      
+  
+# metodo 3 mucho mas mejorado
+def arrayManipulation3(n, queries):
+    # Write your code here
+    list_ceros = [0]*n
+    for a,b,k in queries:    
+        list_ceros[a-1: b] = [x + k for x in list_ceros[a-1: b]]          
+    return max(list_ceros)      
   
 
 if __name__ == '__main__':
@@ -43,7 +50,7 @@ if __name__ == '__main__':
             list_row = [int(date) for date in row.split(" ")]
             queries.append(list_row)       
         
-        result = arrayManipulation2(n, queries)
+        result = arrayManipulation3(n, queries)
         print(result)
         
 
