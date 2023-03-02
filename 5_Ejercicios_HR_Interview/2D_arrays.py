@@ -37,7 +37,32 @@ def arrayManipulation3(n, queries):
     for a,b,k in queries:    
         list_ceros[a-1: b] = [x + k for x in list_ceros[a-1: b]]          
     return max(list_ceros)      
-  
+
+# metodo 4, el mejor metodo, pero no lo entiendo del todo  (este lo copie)
+# este metodo solo toma el primer valor del rango "a" y lo iguala a "k" y el ultimo+1 "b+1" y lo iguala a -k, no es 
+# necesario llenar la listas con cientos de valores k, se entiende que a partir del primero todo es igual y despues 
+# del ultimo se resta k, luego se ordena la lista "sorted" y se realiza la acomulacion. (SE AHORRA MUCHA MEMORIA)
+from itertools import accumulate, chain
+from operator import itemgetter
+def arrayManipulation4(n, queries):
+    arr = chain.from_iterable(((a, k), (b + 1, -k)) for a, b, k in queries)    
+    return max(accumulate(map(itemgetter(1), sorted(arr))))
+
+# metodo 5, igual al 4 pero sin importar itertools y operator
+def arrayManipulation5(n, queries):
+    # Write your code here
+    list_acom = []
+    for a,b,k in queries:    
+        list_a, list_b = [a, k], [b+1, -k] 
+        list_acom.append(list_a) 
+        list_acom.append(list_b)
+    list_acom = sorted(list_acom) 
+    y = 0
+    suma_acom = [y := y + x[1] for x in list_acom] 
+    return max(suma_acom)
+    #return max(list_acom)   
+
+
 
 if __name__ == '__main__':
     with open("Archivos//2Darray_ejercicio_5.txt", 'r') as ftpr:
@@ -50,9 +75,9 @@ if __name__ == '__main__':
             list_row = [int(date) for date in row.split(" ")]
             queries.append(list_row)       
         
-        result = arrayManipulation3(n, queries)
+        result = arrayManipulation4(n, queries)
         print(result)
         
 
     7542539201
-    7542539201
+   
