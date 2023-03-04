@@ -31,6 +31,14 @@ cuadrados = map(lambda x: x ** 2, lista)
 for x in cuadrados:
     print(x)
 
+# isinstance() se utiliza para comprobar si un objeto es una instancia de una clase o de una subclase de 
+# esa clase. Donde objeto es el objeto que se desea comprobar y clase es la clase o subclase con la que se desea comparar.
+x = 42
+if isinstance(x, int):
+    print("x es un entero")
+else:
+    print("x no es un entero")
+
 # reduce(): Aplica una función acumulativa a todos los elementos de la secuencia y devuelve el resultado final. 
 # Por ejemplo:
 from functools import reduce
