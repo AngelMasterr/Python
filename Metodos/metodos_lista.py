@@ -1,5 +1,5 @@
 # list : funcion para crear una lista
-lista = list(["hola", "angel", "eduardo", 34, 1.78])
+lista = list(["hola", "angel", "eduardo", 34, 1.78, 34])
 print(lista)
 
 # len : funcion que deveulve la cantidad de elementos de una lista 
@@ -8,6 +8,9 @@ print(len(lista))
 # append : metodo para agregar un elemento a una lista, primero lo agrega y luego lo llama (dos lineas)
 lista.append("soltero")
 print(lista) 
+
+# count() : cuantas veces se encuentra un elemento en una lista
+print(lista.count(34))
 
 # insert : metodo para agregar un elemento a una lista en la posición dada
 lista.insert(1,"mi bello")
