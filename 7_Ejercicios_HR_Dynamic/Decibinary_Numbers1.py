@@ -37,7 +37,7 @@ def decibinary(n):
     #print(numeros) 
     return numeros   
 
-n=20
+n=1000
 list_total = [0,1]
 m = 2  
 while len(list_total) < n:     
