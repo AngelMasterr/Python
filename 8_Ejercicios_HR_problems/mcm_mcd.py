@@ -22,6 +22,7 @@ mcm_a = mcm(a)
 print(mcm_a)  # Output: 7886834500
 max_a = max(a)
 max_b = max(b)
+#compl 
 
 minb = max_b//mcm_a
 result=[]
