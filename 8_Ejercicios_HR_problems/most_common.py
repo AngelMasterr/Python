@@ -1,9 +1,11 @@
 from collections import Counter
 # create a list of numbers and find the most repeated number
-# the counter method help us to find and order the number that occur the most. 
+# the counter method help us to findthe number that occur the most. 
 
 def migratoryBirds(arr):
-    # Write your code here
+    # first order the list, if there is more than one number with the same number of repetitions 
+    # the counter function is ascending
+    arr = sorted(arr)
     birds = Counter(arr)
     
     # most_common(x): this method creates a list with "x" tuples most common, [0][0] accesses 
