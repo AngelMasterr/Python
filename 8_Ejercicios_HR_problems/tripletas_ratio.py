@@ -27,10 +27,10 @@ def countTriplets(arr, r):
             combi += math.comb(list_count[i],3)
         return(combi)  
 
-with open("Archivos//8_tripletas_prueba3.txt","r") as prueba:
+with open("Archivos//8_tripletas_ratio//8_tripletas_prueba4.txt","r") as prueba:
     list_arr = prueba.readline()
     arr = list(map(int, list_arr.strip().split()))
-    r = 3
+    r = 10
     print(countTriplets(arr, r))
 
 
@@ -38,8 +38,8 @@ arr = [1, 3, 9, 9, 27, 27, 81]
 r = 3
 #print(countTriplets(arr, r))
 
-# 13621903916
-# 2325652489
+# 13621903916       8040276546818
+# 2325652489        1339347780085
 
 
 # 166661666700000
