@@ -9,7 +9,7 @@ from collections import Counter
 
 def countTriplets(arr, r):  
     arr = sorted(arr)
-    list_count = Counter(arr) 
+    list_count = Counter(arr)    
     max_count = max(list_count)
     if r > 1:
         print(list_count) 
@@ -17,7 +17,7 @@ def countTriplets(arr, r):
         factor = 0
         for j in list_count: 
             if j*r in list_count and j*r*r in list_count:
-                factor += max(list_count[j], list_count[j*r], list_count[j*r*r])
+                factor += (list_count[j] * list_count[j*r] * list_count[j*r*r])
             elif j*r*r > max_count:
                 break
         return(factor)        
@@ -27,14 +27,22 @@ def countTriplets(arr, r):
             combi += math.comb(list_count[i],3)
         return(combi)  
 
-with open("Archivos//8_tripletas_prueba2.txt","r") as prueba:
+with open("Archivos//8_tripletas_prueba3.txt","r") as prueba:
     list_arr = prueba.readline()
     arr = list(map(int, list_arr.strip().split()))
-    r = 2
+    r = 3
     print(countTriplets(arr, r))
 
 
-arr = [1, 3, 9, 9, 27, 81]
+arr = [1, 3, 9, 9, 27, 27, 81]
 r = 3
 #print(countTriplets(arr, r))
 
+# 13621903916
+# 2325652489
+
+
+# 166661666700000
+# 166661666700000
+
+#1123 1100 1089
