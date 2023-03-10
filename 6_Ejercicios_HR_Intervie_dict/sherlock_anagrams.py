@@ -7,6 +7,7 @@ Hay dos pares anagramáticos de longitud 1: [c,c] y [d,d] = [0,2] y [1,3]
 Hay tres pares anagramáticos de longitud 2: [cd,dc], [cd,cd],[dc,cd] = [[0,1],[1,2]], [[0,1],[2,3]], [[1,2],[2,3]] 
 """
 from collections import Counter
+from itertools import combinations
 def sherlockAndAnagrams(s):
     # Write your code here
     sub_s = []

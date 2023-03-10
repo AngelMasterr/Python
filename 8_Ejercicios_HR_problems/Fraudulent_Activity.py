@@ -18,9 +18,12 @@ def activityNotifications(expenditure, d):
             noti += 1
     return noti
         
-with open("Archivos//8_Fraudulent_Activity//Fraudulent_Activity.txt","r") as prueba: 
+"""with open("Archivos//8_Fraudulent_Activity//Fraudulent_Activity.txt","r") as prueba: 
     lineas = prueba.readlines()
     linea_1 = list(map(int, lineas[0].split()))
-    linea_2 = list(map(int, lineas[1].split()))
+    linea_2 = list(map(int, lineas[1].split()))    
+    activityNotifications(linea_2 ,linea_1[1])"""
     
-    activityNotifications(linea_2 ,linea_1[1])
+d = 5
+lista = [2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 4, 4, 4, 4, 4, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 6, 6, 6, 8, 8, 4, 5]
+print(activityNotifications(lista ,d))
