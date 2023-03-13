@@ -11,6 +11,7 @@ print(claves)
 
 # busca el item en el diccionario, si no lo encuentra sale error
 buscar = diccionario["nombre"] 
+
 # get : es necesario para que no salga error cuando no encuentra el item en el diccionario y da como resultado "none"
 buscar = diccionario.get("nombre") 
 print(buscar)
