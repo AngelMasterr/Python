@@ -1,33 +1,33 @@
-from collections import Counter
+# A string is said to be a child of a another string if it can be formed by deleting 0 or more characters 
+# from the other string. Letters cannot be rearranged. Given two strings of equal length, what's the longest 
+# string that can be constructed such that it is a child of both?
 
+"""Example:
+s1 = "ABQRTOCE"
+s2 = "ABTCROEX"  
+These strings have two children with maximum length 5, ABROE and ABTCE. They can be formed by eliminating the characters 
+("Q","T","C" in s1 and "T","C","X" in s2) or ("Q","R","O" in s1 and "R","O","X" in s2)"""
+
+from collections import Counter
 def commonChild(s1, s2):
-    list_s1=[]; list_s2=[]
-    for i, j in zip(s1, s2):
-        if i in s2:# and count_s2[i]>0:
-            list_s1.append(i)            
-        if j in s1:# and count_s1[j]>0:
-            list_s2.append(j)
-    list_s1="".join(list_s1)
-    list_s2="".join(list_s2)
-    print(list_s1," ",list_s2)
+    m = len(s1)
+    n = len(s2)
+    # 2D Array m*n
+    counter = [[0] * (n + 1) for x in range(m + 1)]
+    longest = 0
+
+    for i in range(m):
+        for j in range(n):
+            if s1[i] == s2[j]:
+                c = counter[i][j] + 1
+                counter[i + 1][j + 1] = c
+                if c > longest:
+                    longest = c
+            else:
+                counter[i + 1][j + 1] = max(counter[i + 1][j], counter[i][j + 1])
+    return longest 
       
-    def compare(list1, list2):
-        lists_s = []
-        if list1 in list2: lists_s.append(list1)
-        elif list2 in list1: lists_s.append(list1)
-        else:
-            for n in range(len(list1)):
-                for i in range(1, len(list1)-n):
-                    if list1[n:-i] in list2:
-                        lists_s.append(list1[n:-i])
-                        break
-                for i in range(1, len(list2)-n):
-                    if list2[n:-i] in list1:
-                        lists_s.append(list2[n:-i])
-                        break
-        
-        return(lists_s)
-    
-    print(compare(list_s1,list_s2))
-    # HNHAN   NHAAAA
+s1 = "WEWOUCUIDGCGTRMEZEPXZFEJWISRSBBSYXAYDFEJJDLEBVHHKS"
+s2 = "FDAGCXGKCTKWNECHMRXZWMLRYUCOCZHJRRJBOAJOQJZZVUYXIC"
+print(commonChild(s1,s2))
                 
