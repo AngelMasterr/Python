@@ -8,3 +8,4 @@ print(ransomNote)
 
 "fihjjjjei"
 "hjibagacbhadfaefdjaeaebgi"
+from collections import Counter
