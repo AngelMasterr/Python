@@ -9,13 +9,13 @@ class Perro:
         
     # metodos
     def ladrar(self):
-        print("El perro esta ladrando")
+        print("{} esta ladrando".format(self.nombre))
         
     def comer(self):
-        print("El perro esta comiendo")
+        print("{} esta comiendo".format(self.nombre))
     
     def jugar(self):
-        print("El perro esta jugando")
+        print("{} esta jugando".format(self.nombre))
         
     def cambiar_nombre(self, nombre):
         self.nombre = nombre
@@ -25,6 +25,8 @@ class Perro:
 my_dog = Perro("Bobis", "chand", "marron")
 # llamara un metodo o atributo de la clase "Perro" la cual esta en "my_dog"
 my_dog.comer()
+my_dog.ladrar()
+my_dog.jugar()
 my_dog.edad = "5 años"
-print(my_dog.nombre, my_dog.edad)
+print(my_dog.nombre,"tiene", my_dog.edad)
 my_dog.cambiar_nombre("Alucard")
