@@ -7,7 +7,7 @@ for i in range(k):
 prod_k = list(sum(x)%m for x in product(*list_K))
 print(max(prod_k))
 """
-3 1000
-2 5 4
-3 7 8 9 
-5 5 7 8 9 10 """
+k=3, m=1000
+n=2, list_n=5 4
+n=3, list_n=7 8 9 
+n=5, list_n=5 7 8 9 10 """
