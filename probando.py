@@ -1,12 +1,9 @@
-string = "angelduarte"
-print(string[::-1])
-
-ransomNote = "fihjjjjei"; magazine = "hjibagacbhadfaefdjaeaebgi"
-
-ransomNote = ransomNote.replace("j","z")
-print(ransomNote)
-
-"fihjjjjei"
-"hjibagacbhadfaefdjaeaebgi"
-
-k = 1 3 6 10 15 21
+try:
+    print("sfasfa")
+except:
+    print("sfaasa")
+finally:
+    print("asdasda")
+    y = [2, 5j, 6]
+    y.sort()
+    print(y)
