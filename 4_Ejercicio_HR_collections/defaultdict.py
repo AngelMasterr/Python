@@ -15,11 +15,11 @@ b"""
 
 from collections import defaultdict
 d = defaultdict(list)
-n, m = map(int,input().split())
+n, m = map(int,input("sdfs").split())
 for i in range(n):
     d[input()].append(str(i+1))
-#print(d['a'])
-#print(d['b'])
+print(d['a'])
+print(d['b'])
 for j in range(m):
     print(" ".join(d[input()]) or -1)
     
