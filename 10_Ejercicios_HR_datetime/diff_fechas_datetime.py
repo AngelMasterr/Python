@@ -4,6 +4,7 @@ from datetime import datetime
 
 fecha_str1 = "Fri 01 May 2015 13:54:36 -0000"
 fecha_str2 = "Sat 02 May 2015 15:43:21 -0000"
+# fecha_str2 = "Sat 02 May 2015 13:54:36 -0000"
 
 format_str = "%a %d %b %Y %H:%M:%S %z" 
 # %a: corresponds to the name of the day
