@@ -12,7 +12,7 @@ def serie_fibonacci(dato):
 dato = int(input("Introduzca un numero mayor a 0: "))
 print(serie_fibonacci(dato))
 
-# Cree una funcion ára calcular primos lo mas corta psoible con los conocimientos aprendidos
+# Cree una funcion para calcular primos lo mas corta psoible con los conocimientos aprendidos
 
 primos_hasta = lambda num: list(filter(lambda x: all(x % i != 0 for i in range(2, x)), range(2, num+1)))
 print(primos_hasta(dato))
@@ -69,4 +69,5 @@ for i in lista_numeros2:
         lista_numeros2.remove(num)
     
 print(f"{lista_numeros2} metodo refacil") 
+
 
